@@ -6,3 +6,5 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 gsap.registerPlugin(DrawSVGPlugin); 
 gsap.registerPlugin(MorphSVGPlugin);
 
+const svganim = gsap.timeline ()
+;
