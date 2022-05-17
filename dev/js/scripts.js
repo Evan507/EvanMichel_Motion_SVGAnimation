@@ -10,7 +10,7 @@ gsap.registerPlugin(MorphSVGPlugin);
 const svganim = gsap.timeline ()
 
 svganim
-.from(".bubble1", {scale: 0, duration:2.5, ease: "elastic.out(1.5, 0.5)"}, "grow1")
-.from(".bubble2", {scale: 0, duration:2.5, ease: "elastic.out(1.25, 0.5)"}, "grow2")
-.from(".bubble3", {scale: 0, duration:2.5, ease: "elastic.out(1, 0.5)"}, "grow3")
+.from(".bubble1", {scale: 0, duration:2.5, ease: "elastic.out(1.5, 0.5)", transformOrigin:'50% 50%'}, "grow1")
+.from(".bubble2", {scale: 0, duration:2.5, ease: "elastic.out(1.25, 0.5)", transformOrigin:'50% 50%'}, "grow2")
+.from(".bubble3", {scale: 0, duration:2.5, ease: "elastic.out(1, 0.5)", transformOrigin:'50% 50%'}, "grow3")
 ;
