@@ -9,7 +9,13 @@ gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
 gsap.registerPlugin(MotionPathPlugin);
 
-const svganim = gsap.timeline ({repeat: -1})
+const svganim = gsap.timeline ({repeat: -1, paused:true});
+const svganim2 = gsap.timeline ({repeat: -1, paused:true});
+const tlarray = [svganim, svganim2]; 
+let randomtl = gsap.utils.random([0,1]); //[0,1,2] - Replace after third timeline
+// console.log(randomtl);
+
+tlarray[randomtl].play();
 
 svganim
 
@@ -37,10 +43,11 @@ svganim
 
 ;
 
-const svganim2 = gsap.timeline ({repeat: -1})
+
 
 svganim2
 
+.from(".snail", {opacity:0, duration: 0.001})
 .to(".snail", {duration: 10, motionPath:{path: "#visor", align: "#visor", alignOrigin:[0.55, 1], start:1, end:0, autoRotate: true}, ease:"none"})
 
 ;
