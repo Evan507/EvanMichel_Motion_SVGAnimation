@@ -11,8 +11,10 @@ gsap.registerPlugin(MotionPathPlugin);
 
 const svganim = gsap.timeline ({repeat: -1, paused:true});
 const svganim2 = gsap.timeline ({repeat: -1, paused:true});
-const tlarray = [svganim, svganim2]; 
-let randomtl = gsap.utils.random([0,1]); //[0,1,2] - Replace after third timeline
+const svganim3 = gsap.timeline ({repeat: -1, paused:true});
+
+const tlarray = [svganim, svganim2, svganim3]; 
+let randomtl = gsap.utils.random([0,1,2]); //[0,1,2] - Replace after third timeline
 // console.log(randomtl);
 
 tlarray[randomtl].play();
@@ -49,6 +51,17 @@ svganim2
 
 .from(".snail", {opacity:0, duration: 0.001})
 .to(".snail", {duration: 10, motionPath:{path: "#visor", align: "#visor", alignOrigin:[0.55, 1], start:1, end:0, autoRotate: true}, ease:"none"})
+
+;
+
+svganim3
+
+.from("#fish1", {opacity:0, duration: 0.0001 }, "fishappear1"  )
+.to("#fish1", {x: 150, duration: 4}, "fishswim1" )
+.from("#fish2", {opacity:0, duration: 0.0001 }, "fishappear2"  )
+.to("#fish2", {x: -150, duration: 4}, "fishswim2" )
+.from("#fish3", {opacity:0, duration: 0.0001 }, "fishappear3"  )
+.to("#fish3", {x: 150, duration: 4}, "fishswim3" )
 
 ;
 
