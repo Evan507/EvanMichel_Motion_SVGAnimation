@@ -57,11 +57,11 @@ svganim2
 svganim3
 
 .from("#fish1", {opacity:0, duration: 0.0001 }, "fishappear1"  )
-.to("#fish1", {x: 150, duration: 4}, "fishswim1" )
+.to("#fish1", {x: 150, duration: 4,  ease:"none"}, "fishswim1" )
 .from("#fish2", {opacity:0, duration: 0.0001 }, "fishappear2"  )
-.to("#fish2", {x: -150, duration: 4}, "fishswim2" )
+.to("#fish2", {x: -150, duration: 4,  ease:"none"}, "fishswim2" )
 .from("#fish3", {opacity:0, duration: 0.0001 }, "fishappear3"  )
-.to("#fish3", {x: 150, duration: 4}, "fishswim3" )
+.to("#fish3", {x: 150, duration: 4,  ease:"none"}, "fishswim3")
 
 ;
 
