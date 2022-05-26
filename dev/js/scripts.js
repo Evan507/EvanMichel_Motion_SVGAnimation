@@ -111,7 +111,7 @@ function bub2(){
 }
 
 function bub3(){
-    let tl = gsap.timeline({repeat:-1, repeatDelay:1.5});
+    let tl = gsap.timeline({repeat:-1, repeatDelay:1});
 
     tl
     .from(".bubble3", {delay:2, scale: 0, duration:1.5, ease: "elastic.out(1, 0.5)", transformOrigin:'50% 50%'}, "grow3")
