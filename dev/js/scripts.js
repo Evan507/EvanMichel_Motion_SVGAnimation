@@ -21,9 +21,9 @@ tlarray[randomtl].play();
 
 svganim
 
-.from(".bubble1", {scale: 0, duration:2.5, ease: "elastic.out(1.5, 0.5)", transformOrigin:'50% 50%'}, "grow1")
-.from(".bubble2", {scale: 0, duration:2.5, ease: "elastic.out(1.25, 0.5)", transformOrigin:'50% 50%'}, "grow2")
-.from(".bubble3", {scale: 0, duration:2.5, ease: "elastic.out(1, 0.5)", transformOrigin:'50% 50%'}, "grow3")
+.from(".bubble1", {scale: 0, duration:1.5, ease: "elastic.out(1.5, 0.5)", transformOrigin:'50% 50%'}, "grow1")
+.from(".bubble2", {scale: 0, duration:1.5, ease: "elastic.out(1.25, 0.5)", transformOrigin:'50% 50%'}, "grow2")
+.from(".bubble3", {scale: 0, duration:1.5, ease: "elastic.out(1, 0.5)", transformOrigin:'50% 50%'}, "grow3")
 .to(".bubble1", {ease: "elastic.out(1.5, 0.5)", transformOrigin:'50% 50%', scale:1.2}, "balloon1")
 .to(".bubble1", {opacity: 0, delay: 0, duration: .01}, "gone1")
 .from(".pop1", {opacity:0, duration: .02}, "pop1")
