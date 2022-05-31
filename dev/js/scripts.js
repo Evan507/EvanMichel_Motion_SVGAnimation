@@ -151,7 +151,7 @@ function drift2(){
     .to(".bubble2", {y:10, duration: 5});
 
     return tl;
-};
+}
 
 function drift3(){
     let tl = gsap.timeline({repeat: -1});
